@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import App from "../App";
 import Atividade001 from "../pages/atividade001";
 import Atividade002 from "../pages/atividade002";
+import Atividade003 from "../pages/atividade003";
 
 function Rotas() {
     return (
@@ -11,6 +12,7 @@ function Rotas() {
                 <Route path="/" exact element={<App />} />
                 <Route path="/atividade001" exact element={<Atividade001 />} />
                 <Route path="/atividade002" exact element={<Atividade002 />} />
+                <Route path="/atividade003" exact element={<Atividade003 />} />
             </Routes>
         </BrowserRouter>
     )

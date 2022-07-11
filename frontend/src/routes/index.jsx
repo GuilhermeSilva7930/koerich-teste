@@ -5,6 +5,7 @@ import Atividade001 from "../pages/atividade001";
 import Atividade002 from "../pages/atividade002";
 import Atividade003 from "../pages/atividade003";
 import Atividade004 from "../pages/atividade004";
+import Atividade005 from "../pages/atividade005";
 
 function Rotas() {
     return (
@@ -15,6 +16,7 @@ function Rotas() {
                 <Route path="/atividade002" exact element={<Atividade002 />} />
                 <Route path="/atividade003" exact element={<Atividade003 />} />
                 <Route path="/atividade004" exact element={<Atividade004 />} />
+                <Route path="/atividade005" exact element={<Atividade005 />} />
             </Routes>
         </BrowserRouter>
     )

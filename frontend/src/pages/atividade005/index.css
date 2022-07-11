@@ -1,0 +1,22 @@
+.atividade001 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.scroll {
+    padding: 10px;
+    overflow-x: auto;
+}
+
+.link-voltar {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.233);
+    width: 70px;
+}

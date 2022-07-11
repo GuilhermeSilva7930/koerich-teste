@@ -1,0 +1,17 @@
+.pesquisa {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.pesquisa input {
+    width: 50%;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    padding-left: 10px;
+}
+
+.pesquisa input::placeholder {
+    padding-left: 3px;
+}

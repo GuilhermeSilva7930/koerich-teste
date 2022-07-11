@@ -1,0 +1,9 @@
+* {
+    --cor-de-fundo: antiquewhite;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+}

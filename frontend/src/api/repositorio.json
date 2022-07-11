@@ -1,0 +1,42 @@
+[
+    {
+        "key": 1,
+        "produto": "Cadeira Gamer",
+        "quantidade": 59,
+        "defeito": 13,
+        "valor": 599.12,
+        "imagem": "cadeira.jpeg"
+    },
+    {
+        "key": 2,
+        "produto": "Sofa",
+        "quantidade": 85,
+        "defeito": 10,
+        "valor": 323.00,
+        "imagem": "sofa.jpeg"
+    },
+    {
+        "key": 3,
+        "produto": "Televisão de 55 polegadas",
+        "quantidade": 64,
+        "defeito": 13,
+        "valor": 2399.99,
+        "imagem": "tv.jpg"
+    },
+    {
+        "key": 4,
+        "produto": "Maquina de lavar roupas",
+        "quantidade": 34,
+        "defeito": 0,
+        "valor": 1299.23,
+        "imagem": "lavadoura.webp"
+    },
+    {
+        "key": 5,
+        "produto": "Notebook trabalho",
+        "quantidade": 50,
+        "defeito": 12,
+        "valor": 3500,
+        "imagem": "notebook.jpeg"
+    }
+]

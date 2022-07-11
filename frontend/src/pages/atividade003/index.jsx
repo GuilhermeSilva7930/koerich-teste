@@ -10,7 +10,7 @@ function Atividade003() {
                 <Link to="/" className="link-voltar ms-3">Voltar</Link>
             </div>
             {list.map(produto => (
-                <div className="card fotos">
+                <div key={produto.key} className="card fotos">
                     <img src={`assets/imagens/${produto.imagem}`} className="card-img-top img" alt="..." />
                     <div className="card-body">
                         <h5 className="card-title">{produto.produto}</h5>

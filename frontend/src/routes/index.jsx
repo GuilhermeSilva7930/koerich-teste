@@ -4,6 +4,7 @@ import App from "../App";
 import Atividade001 from "../pages/atividade001";
 import Atividade002 from "../pages/atividade002";
 import Atividade003 from "../pages/atividade003";
+import Atividade004 from "../pages/atividade004";
 
 function Rotas() {
     return (
@@ -13,6 +14,7 @@ function Rotas() {
                 <Route path="/atividade001" exact element={<Atividade001 />} />
                 <Route path="/atividade002" exact element={<Atividade002 />} />
                 <Route path="/atividade003" exact element={<Atividade003 />} />
+                <Route path="/atividade004" exact element={<Atividade004 />} />
             </Routes>
         </BrowserRouter>
     )

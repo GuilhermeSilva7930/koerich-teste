@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import "./index.css"
 import list from "../../api/repositorio.json"
 import { Link } from "react-router-dom"
@@ -18,6 +18,7 @@ function Atividade004() {
         })
         setLista(listaFiltrada)
         setFiltroLigado(!filtroLigado)
+        localStorage.setItem("item", "nome")
     }
 
     function filtrarPorQtdEstoque() {
@@ -30,6 +31,7 @@ function Atividade004() {
         })
         setLista(listaFiltrada)
         setFiltroLigado(!filtroLigado)
+        localStorage.setItem("item", "estoque")
     }
 
     function filtrarPorPcsComDefeito() {
@@ -42,7 +44,20 @@ function Atividade004() {
         })
         setLista(listaFiltrada)
         setFiltroLigado(!filtroLigado)
+        localStorage.setItem("item", "defeito")
     }
+
+    useEffect(() => {
+        if (localStorage.getItem("item") === "nome") {
+            filtrarPorNome()
+        } else if (localStorage.getItem("item") === "estoque") {
+            filtrarPorQtdEstoque()
+        } else if (localStorage.getItem("item") === "defeito") {
+            filtrarPorPcsComDefeito()
+        } else {
+            setLista(list)
+        }
+    }, [])
 
     return (
         <main className="container atividade003 mt-4">

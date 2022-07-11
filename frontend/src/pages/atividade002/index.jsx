@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react"
+import React, { useEffect, useRef, useState } from "react"
 import list from "../../api/repositorio.json"
 import "./index.css"
 import { Link } from "react-router-dom"
@@ -11,13 +11,18 @@ function Atividade002() {
     function atualizarTabela() {
         let texto = input.current.value.toLowerCase()
         setListaAtualizada(list.filter(produto => produto.produto.toLowerCase().includes(texto)))
+        localStorage.setItem("valueInput", input.current.value)
     }
+
+    useEffect(() => {
+        atualizarTabela()
+    }, [])
 
     return (
         <main className="container atividade001">
             <div className="pesquisa">
                 <Link to="/" className="link-voltar ms-3">Voltar</Link>
-                <input onChange={atualizarTabela} ref={input} type="text" className="me-3" placeholder="Digite para filtrar..." />
+                <input onChange={atualizarTabela} value={localStorage.getItem("valueInput")} ref={input} type="text" className="me-3" placeholder="Digite para filtrar..." />
             </div>
             <div className="scroll">
                 <table className="table">

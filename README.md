@@ -21,6 +21,16 @@ Estas são as tecnologias utilizadas no desenvolvimento do projeto:
 
 (Depois de executar a primeira vez vá na classe principal KoerichApplication.java e comente o método run)
 
+Endpoints api:
+@GET
+- http://localhost:8080/produtos
+@POST
+- http://localhost:8080/save
+@PUT
+- http://localhost:8080/upate
+@DELETE
+- http://localhost:8080/delete/id   (número do id)
+
 <div align="center">
   <p>Desenvolvido por 💙 Guilherme Silva</p> <br>
   <p>☎️ Entre em contato!<p> <br>

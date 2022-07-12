@@ -4,24 +4,31 @@
     align-items: center;
     height: 100vh;
     background-color: var(--cor-de-fundo);
-}
-
-.item {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 .link {
     text-decoration: none;
     color: black;
+}
+
+.link:hover {
+    color: black;
+}
+
+.item {
     background-color: whitesmoke;
     padding: 10px;
     border-radius: 5px;
-    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.233);
-    width: auto;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.253);
+    margin: 10px;
 }
 
-a:hover {
-    color: black;
+.box div {
+    padding: 10px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.253);
+   
 }

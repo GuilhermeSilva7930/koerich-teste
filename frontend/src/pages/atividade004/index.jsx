@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import "./index.css"
 import list from "../../api/repositorio.json"
-import { Link } from "react-router-dom"
+import SetaVoltar from "../../components/setaVoltar"
 
 function Atividade004() {
 
@@ -59,15 +59,27 @@ function Atividade004() {
         }
     }, [])
 
+    const formatter = new Intl.NumberFormat("pt-BR", {
+        style: "currency",
+        currency: "BRL",
+        minimumFractionDigits: 2,
+    })
+
     return (
         <main className="container atividade003 mt-4">
-            <div className="pesquisa">
-                <Link to="/" className="link-voltar ms-3">Voltar</Link>
-                <span>
+            <div className="container items">
+                <SetaVoltar></SetaVoltar>
+                <span className="mt-2">
                     Ordernar:
-                    <button onClick={filtrarPorNome}>Nome</button>
-                    <button onClick={filtrarPorQtdEstoque}>Qtd Estoque</button>
-                    <button onClick={filtrarPorPcsComDefeito}>Peças com Defeito</button>
+                    <button className="btns" onClick={filtrarPorNome}>
+                        Nome
+                    </button>
+                    <button className="btns" onClick={filtrarPorQtdEstoque}>
+                        Qtd Estoque
+                    </button>
+                    <button className="btns" onClick={filtrarPorPcsComDefeito}>
+                        Peças com Defeito
+                    </button>
                 </span>
             </div>
             {lista.map(produto => (
@@ -76,7 +88,7 @@ function Atividade004() {
                     <div className="card-body">
                         <h5 className="card-title">{produto.produto}</h5>
                         <p className="card-text">Quantidade: {produto.quantidade - produto.defeito}</p>
-                        <span className="btn btn-primary">Valor: R$ {produto.valor.toString().replace(".", ",")}</span>
+                        <span className="botao">Valor: R$ {formatter.format(produto.valor)}</span>
                     </div>
                 </div>
             ))}

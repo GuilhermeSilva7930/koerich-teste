@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import App from "../App";
+import Atividade6e7 from "../components/atividade6e7";
 import Atividade001 from "../pages/atividade001";
 import Atividade002 from "../pages/atividade002";
 import Atividade003 from "../pages/atividade003";
@@ -17,6 +18,8 @@ function Rotas() {
                 <Route path="/atividade003" exact element={<Atividade003 />} />
                 <Route path="/atividade004" exact element={<Atividade004 />} />
                 <Route path="/atividade005" exact element={<Atividade005 />} />
+                <Route path="/atividade006" exact element={<Atividade6e7 texto="Preferências Salvas" />} />
+                <Route path="/atividade007" exact element={<Atividade6e7 texto="Páginas estilizadas" />} />
             </Routes>
         </BrowserRouter>
     )

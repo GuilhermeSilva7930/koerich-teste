@@ -1,12 +1,19 @@
 import React from "react"
 import produtos from "../../api/repositorio.json"
 import "./index.css"
-import { Link } from "react-router-dom"
+import SetaVoltar from "../../components/setaVoltar"
 
 function Atividade005() {
+
+    const formatter = new Intl.NumberFormat("pt-BR", {
+        style: "currency",
+        currency: "BRL",
+        minimumFractionDigits: 2,
+    })
+
     return (
         <main className="container atividade001">
-            <Link to="/" className="link-voltar ms-3">Voltar</Link>
+            <SetaVoltar></SetaVoltar>
             <div className="scroll">
                 <table className="table">
                     <thead>
@@ -25,7 +32,7 @@ function Atividade005() {
                                 <td>{produto.quantidade}</td>
                                 <td>{produto.defeito}</td>
                                 <td>{produto.quantidade - produto.defeito}</td>
-                                <td>R$ {produto.valor.toString().replace(".", ",")}</td>
+                                <td>{formatter.format(produto.valor)}</td>
                             </tr>
                         ))}
                     </tbody>

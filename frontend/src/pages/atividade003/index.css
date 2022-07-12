@@ -3,13 +3,29 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
-    
 }
 
 .card {
     width: 500px;
+    padding: 15px;
 }
 
 .card img {
     height: 400px;
+    transition: all ease-in-out .3s;
+}
+
+.botao {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media(max-width: 460px) {
+    img {
+        height: 250px !important;
+    }
 }

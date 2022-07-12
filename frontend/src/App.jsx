@@ -4,29 +4,13 @@ import { Link } from "react-router-dom"
 function App() {
   return (
     <main className="container box">
-      <div className="row">
-        <div className="col-12 col-sm item">
-          <Link to="/atividade001" className="link">Atividade001</Link>
-        </div>
-        <div className="col-12 col-sm item">
-          <Link to="/atividade002" className="link">Atividade002</Link>
-        </div>
-        <div className="col-12 col-sm item">
-          <Link to="/atividade003" className="link">Atividade003</Link>
-        </div>
-        <div className="col-12 col-sm item">
-          <Link to="/atividade004" className="link">Atividade004</Link>
-        </div>
-        <div className="col-12 col-sm item">
-          <Link to="/atividade005" className="link">Atividade005</Link>
-        </div>
-        <div className="col-12 col-sm item">
-          <Link to="/atividade006" className="link">Atividade006</Link>
-        </div>
-        <div className="col-12 col-sm item">
-          <Link to="/atividade007" className="link">Atividade007</Link>
-        </div>
-      </div>
+      <Link to="/atividade001" className="link item">Atividade001</Link>
+      <Link to="/atividade002" className="link item">Atividade002</Link>
+      <Link to="/atividade003" className="link item">Atividade003</Link>
+      <Link to="/atividade004" className="link item">Atividade004</Link>
+      <Link to="/atividade005" className="link item">Atividade005</Link>
+      <Link to="/atividade006" className="link item">Atividade006</Link>
+      <Link to="/atividade007" className="link item">Atividade007</Link>
     </main>
   )
 }

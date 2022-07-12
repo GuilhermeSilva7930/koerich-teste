@@ -1,16 +1,22 @@
-.pesquisa span button {
-    margin: 0px 10px;
-    border: none;
-    border-radius: 4px;
-    background-color: transparent;
-    padding: 10px;
-    background-color: whitesmoke;
-    color: black;
-    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.151);
-    transition: all ease-in-out .3s;
+.items {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.pesquisa span button:hover {
-    background-color: black;
-    color: white;
+.btns {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.158);
+    margin: 5px;
+}
+
+@media(max-width: 525px) {
+    .btns {
+        width: 100%;
+    }
 }

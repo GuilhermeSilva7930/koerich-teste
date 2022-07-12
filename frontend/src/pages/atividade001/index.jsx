@@ -1,12 +1,12 @@
 import React from "react"
 import produtos from "../../api/repositorio.json"
 import "./index.css"
-import { Link } from "react-router-dom"
+import SetaVoltar from "../../components/setaVoltar"
 
 function Atividade001() {
     return (
         <main className="container atividade001">
-            <Link to="/" className="link-voltar ms-3">Voltar</Link>
+            <SetaVoltar></SetaVoltar>
             <div className="scroll">
                 <table className="table">
                     <thead>

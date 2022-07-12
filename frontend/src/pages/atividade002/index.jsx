@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react"
 import list from "../../api/repositorio.json"
 import "./index.css"
-import { Link } from "react-router-dom"
+import SetaVoltar from "../../components/setaVoltar"
 
 function Atividade002() {
 
@@ -21,7 +21,7 @@ function Atividade002() {
     return (
         <main className="container atividade001">
             <div className="pesquisa">
-                <Link to="/" className="link-voltar ms-3">Voltar</Link>
+                <SetaVoltar></SetaVoltar>
                 <input onChange={atualizarTabela} value={localStorage.getItem("valueInput")} ref={input} type="text" className="me-3" placeholder="Digite para filtrar..." />
             </div>
             <div className="scroll">

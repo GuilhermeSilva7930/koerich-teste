@@ -19,6 +19,8 @@ Estas são as tecnologias utilizadas no desenvolvimento do projeto:
 - Abra o workbench e crie um banco usando o comando create database koerich
 - Rode o projeto em Spring
 
+(Depois de executar a primeira vez vá na classe principal KoerichApplication.java e comente o método run)
+
 <div align="center">
   <p>Desenvolvido por 💙 Guilherme Silva</p> <br>
   <p>☎️ Entre em contato!<p> <br>

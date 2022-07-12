@@ -14,6 +14,11 @@ Estas são as tecnologias utilizadas no desenvolvimento do projeto:
 - Rode "npm i ou yarn"
 - Rode "npm start ou yarn start"
 
+- Abra a pasta backend/koerich na sua ide java
+- Vá em src/main/resources e altere o username e o password de acordo com o seu mysql
+- Abra o workbench e crie um banco usando o comando create database koerich
+- Rode o projeto em Spring
+
 <div align="center">
   <p>Desenvolvido por 💙 Guilherme Silva</p> <br>
   <p>☎️ Entre em contato!<p> <br>
